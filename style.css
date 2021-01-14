@@ -1,0 +1,41 @@
+body {
+  font: 10pt Arial,Helvetica, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+}
+h2 {
+  font-size: 1.1em;
+  color: #752641;
+  margin-top: 0;
+}
+#img {
+  position:relative;
+  top:0px;
+  right:0px;
+}
+#container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+#contetn p {
+  margin-top: 0.3em;
+}
+#header {
+  background: #8fa09b;
+  font-size: 25pt;
+  color: #edeed5;
+  padding: 5px;
+  font-weight: bold;;
+}
+#sidebar {
+  width: 120px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+#footer {
+  background: #8fa09b;
+  color: #fff;
+  padding: 5px;
+}
