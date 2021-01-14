@@ -13,7 +13,7 @@
 }body {
   font: 10pt Arial,Helvetica, sans-serif;
   background: #f0f0f0;
-  margin: 0;
+  margin-left: : 10%;
 }
 h2 {
   font-size: 1.1em;
@@ -27,7 +27,7 @@ h2 {
 }
 #container {
   width: 0 auto;
-  margin-left: : 10%;
+
   position: relative;
 }
 #contetn p {
@@ -45,7 +45,7 @@ h2 {
   position: absolute;
   top: 60px;
   right: 0;
-  text-size: 30px;
+  font-size: 24pt;
 }
 #footer {
   background: #8fa09b;
