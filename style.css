@@ -1,4 +1,16 @@
-body {
+
+@media (max-width: 930px) { /* это будет показано при разрешении монитора до 930 пикселей */
+  .content-wrapper {padding: 0;} /* основное содержимое занимает всё пространство окна */
+}
+
+@media (max-width: 930px) and (min-width: 470px) {  /* для разрешения экрана от 470 до 930 пикселей */
+  aside {position: static; width: 100%; background: #ccc;} /* боковая колонка смещается согласно расположению в HTML и меняет фон */
+}
+
+@media (max-width: 469px) { /* если максимальное разрешение экрана составит 469 пикселей */
+  body {font: .9em/1em "Helvetica Neue",Arial,Helvetica,sans-serif;} /* меняется шрифт */
+  aside {display: none;} /* боковая колонка исчезает */
+}body {
   font: 10pt Arial,Helvetica, sans-serif;
   background: #f0f0f0;
   margin: 0;
@@ -14,7 +26,7 @@ h2 {
   right:0px;
 }
 #container {
-  width: 1000px;
+  width: 0 auto;
   margin: 0 auto;
   position: relative;
 }
