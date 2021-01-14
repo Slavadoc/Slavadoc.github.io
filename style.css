@@ -27,7 +27,7 @@ h2 {
 }
 #container {
   width: 0 auto;
-  margin: 0 auto;
+  margin-left: : 10%;
   position: relative;
 }
 #contetn p {
@@ -41,10 +41,11 @@ h2 {
   font-weight: bold;;
 }
 #sidebar {
-  width: 120px;
+  width: 400px;
   position: absolute;
   top: 60px;
   right: 0;
+  text-size: 30px;
 }
 #footer {
   background: #8fa09b;
