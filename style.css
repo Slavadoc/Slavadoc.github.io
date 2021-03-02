@@ -1,54 +1,40 @@
-
-@media (max-width: 930px) { /* это будет показано при разрешении монитора до 930 пикселей */
-  .content-wrapper {padding: 0;} /* основное содержимое занимает всё пространство окна */
+body {
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "container  container img"
+  "container container nav"
+  "footer footer footer";
+  grid-template-columns: 33% 1fr 1fr;
+  grid-template-rows:  50px 1fr 1fr 40px;
+   height: 100vh; 
+  margin 0;
 }
-
-@media (max-width: 930px) and (min-width: 470px) {  /* для разрешения экрана от 470 до 930 пикселей */
-  aside {position: static; width: 100%; background: #ccc;} /* боковая колонка смещается согласно расположению в HTML и меняет фон */
-}
-
-@media (max-width: 469px) { /* если максимальное разрешение экрана составит 469 пикселей */
-  body {font: .9em/1em "Helvetica Neue",Arial,Helvetica,sans-serif;} /* меняется шрифт */
-  aside {display: none;} /* боковая колонка исчезает */
-}body {
-  font: 10pt Arial,Helvetica, sans-serif;
-  background: #f0f0f0;
-  margin:  5%;
-}
-h2 {
-  font-size: 1.1em;
-  color: #752641;
-  margin-top: 0;
-}
-#img {
-  position:relative;
-  top:0px;
-  right:0px;
-}
-#container {
-  width: 0 auto;
-
-  position: relative;
-}
-#contetn p {
-  margin-top: 0.3em;
-}
-#header {
+#pageHeader {
+  grid-area: header;
   background: #8fa09b;
   font-size: 25pt;
   color: #edeed5;
   padding: 5px;
   font-weight: bold;;
 }
-#sidebar {
-  width: 400px;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  font-size: 20pt;
+
+#img {
+   grid-area: img;
+   max-width: 720px;
+   height: auto;
+   width: 100%;
 }
-#footer {
+#container {
+  grid-area: container;
+}
+#pageFooter {
+  grid-area: footer;
   background: #8fa09b;
   color: #fff;
   padding: 5px;
+}
+#nav {
+  grid-area: nav;
+  align: right;
 }
