@@ -1,19 +1,19 @@
-body {
+ body {
   display: grid;
   grid-template-areas:
   "header header header"
   "container  container img"
   "container container nav"
   "footer footer footer";
-  grid-template-columns: 33% 1fr 1fr;
-  grid-template-rows:  50px 1fr 1fr 40px;
-   height: 100vh; 
-  margin 0;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows:  40px 1fr 1fr 40px;
+   height: 100vh;
+  /* margin 0; */
 }
 #pageHeader {
   grid-area: header;
   background: #8fa09b;
-  font-size: 25pt;
+  font-size: 25px;
   color: #edeed5;
   padding: 5px;
   font-weight: bold;;
@@ -21,20 +21,33 @@ body {
 
 #img {
    grid-area: img;
-   max-width: 720px;
+   max-width: 1000px;
+   min-width: 200px;
    height: auto;
    width: 100%;
 }
 #container {
   grid-area: container;
+  background: green;
 }
 #pageFooter {
   grid-area: footer;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background: #8fa09b;
   color: #fff;
-  padding: 5px;
+  /* background: #8fa09b;
+  color: #fff;
+  padding: 10px;
+   width: auto;
+  position: fixed;
+  bottom: 0; */
 }
 #nav {
   grid-area: nav;
   align: right;
+  background: gray;
+  width: 100%;
 }
