@@ -28,7 +28,6 @@
 }
 #container {
   grid-area: container;
-  background: green;
 }
 #pageFooter {
   grid-area: footer;
